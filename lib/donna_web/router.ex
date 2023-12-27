@@ -17,8 +17,8 @@ defmodule DonnaWeb.Router do
   scope "/", DonnaWeb do
     pipe_through :browser
 
-    get "/a", PageController, :home
-    live "/", LoginLive.Index, :index
+    get "/", PageController, :home
+    live "/login", LoginLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
