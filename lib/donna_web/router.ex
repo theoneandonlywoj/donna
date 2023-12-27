@@ -19,6 +19,7 @@ defmodule DonnaWeb.Router do
 
     get "/", PageController, :home
     live "/login", LoginLive.Index, :index
+    live "/bookmarks", BookmarksLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
